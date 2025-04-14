@@ -1,0 +1,6 @@
+@ParfumBD.API_HostAddress = http://localhost:5082
+
+GET {{ParfumBD.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
