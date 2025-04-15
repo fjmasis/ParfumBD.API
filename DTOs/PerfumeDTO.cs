@@ -33,6 +33,6 @@
         public decimal Precio { get; set; }
         public string Imagen { get; set; } = string.Empty;
         public int Stock { get; set; }
-        public bool Estado { get; set; }
+        public bool Estado { get; set; } 
     }
 }

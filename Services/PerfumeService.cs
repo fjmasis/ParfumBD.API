@@ -67,7 +67,10 @@ namespace ParfumBD.API.Services
 
             perfume.Nombre = perfumeDto.Nombre;
             perfume.Marca = perfumeDto.Marca;
+            perfume.Descripcion = perfumeDto.Descripcion;
+            perfume.TipoFragancia = perfumeDto.TipoFragancia;
             perfume.Precio = perfumeDto.Precio;
+            perfume.Imagen = perfumeDto.Imagen;
             perfume.Stock = perfumeDto.Stock;
             perfume.Estado = perfumeDto.Estado;
 
