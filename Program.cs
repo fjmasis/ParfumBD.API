@@ -1,6 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using ParfumBD.API;
 using ParfumBD.API.Data;
+using ParfumBD.API.Models;
 using ParfumBD.API.Repositories;
 using ParfumBD.API.Services;
 using System.Text.Json.Serialization;
@@ -23,6 +24,9 @@ builder.Services.AddDbContext<ParfumBDContext>(options =>
 builder.Services.AddScoped(typeof(IGenericRepository<>), typeof(GenericRepository<>));
 builder.Services.AddScoped<IUsuarioRepository, UsuarioRepository>();
 builder.Services.AddScoped<IPerfumeRepository, PerfumeRepository>();
+// Make sure these are registered
+builder.Services.AddScoped<IGenericRepository<Carrito>, GenericRepository<Carrito>>();
+builder.Services.AddScoped<IGenericRepository<DetalleCarrito>, GenericRepository<DetalleCarrito>>();
 // Add other repositories as needed
 
 // Add services
